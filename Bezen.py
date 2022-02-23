@@ -96,3 +96,9 @@ data['price_string'] = data['price_string'].replace(np.nan, 0)
 data['value'] = data["price_string"].replace("[$,]", "", regex=True).astype(float,errors='ignore')
 data['price_string'] = data['price_string'].replace(0, np.nan)
 data['currency'] = '$'
+
+#Ques 4
+data.groupby(['category']).mean()
+plt.plot(data.groupby(['category']).mean())
+plt.savefig("mean_price vs category")
+plt.show()
