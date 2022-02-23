@@ -91,3 +91,8 @@ ax.grid()
 fig.suptitle("""On the Basis of Product type \n""", fontweight ="bold")
 plt.savefig("On the basis of product_type zoomed") 
 plt.show()
+#Ques 3
+data['price_string'] = data['price_string'].replace(np.nan, 0)
+data['value'] = data["price_string"].replace("[$,]", "", regex=True).astype(float,errors='ignore')
+data['price_string'] = data['price_string'].replace(0, np.nan)
+data['currency'] = '$'
