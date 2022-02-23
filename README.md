@@ -8,4 +8,4 @@
 ## Part 2 - Counting the number of without price and with price in each category,level_1 and product_type:
 ### On the basis of Category
 ##### Image showing the number of product without prices : 
-![Screenshot](BenzenDataEngineer/on the basis of category with prices.jpg)
+![plot](BenzenDataEngineer/on the basis of category with prices.jpg)
